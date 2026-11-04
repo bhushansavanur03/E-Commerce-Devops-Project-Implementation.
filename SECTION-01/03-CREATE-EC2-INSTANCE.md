@@ -32,8 +32,4 @@ chmod 400 your-key.pem
 
 After establishing the SSH connection, I was able to access the EC2 instance and execute commands remotely.
 
-### Learning Outcome
 
-Through this activity, I learned how to launch and configure an EC2 instance, select an appropriate AMI and instance type, configure storage and security groups, and connect to a cloud-based Linux server using SSH.
-
-I also understood the importance of securely managing key pairs, controlling network access, and monitoring AWS resource usage to avoid unnecessary costs.
