@@ -58,8 +58,4 @@ sudo docker run hello-world
 
 Docker downloaded and executed the Hello World test image and displayed a confirmation message, indicating that Docker was installed and working successfully.
 
-### Learning Outcome
 
-Through this activity, I learned how to install Docker on an Ubuntu EC2 instance using the official Docker repository. I also understood the importance of package repositories, Docker Engine, and Docker CLI.
-
-This installation prepared my EC2 environment for the upcoming containerization activities in this project.
