@@ -67,3 +67,52 @@ This generated the `product_catalog` executable file in the current directory. I
 ```
 
 After executing the application, I received the expected output as mentioned in the service's README file. This confirmed that the Product Catalog microservice was running successfully on my EC2 instance.
+
+
+
+
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------
+### Ad Service Microservice (Java with Gradle)
+
+After setting up the Product Catalog microservice, I moved on to the Ad Service, which is developed using Java and Gradle.
+
+I navigated to the Ad Service directory in the cloned repository on my EC2 instance and installed Java 21 using the following command:
+
+```bash
+sudo apt install openjdk-21-jdk-headless
+```
+
+After installing Java, I provided execution permission to the Gradle wrapper file:
+
+```bash
+chmod +x gradlew
+```
+
+Next, I executed the Gradle installation task:
+
+```bash
+./gradlew installDist
+```
+
+Once the build process was completed, I used the following command to list the generated files and locate the Ad Service executable:
+
+```bash
+ls -ltr ./build/install/opentelemetry-demo-ad/bin/
+```
+
+The build generated the Ad Service executable inside the `build/install/opentelemetry-demo-ad/bin/` directory.
+
+Before starting the service, I configured the application port:
+
+```bash
+export PORT=9099
+```
+
+Finally, I executed the generated Ad Service file using its path:
+
+```bash
+./build/install/opentelemetry-demo-ad/bin/ad
+```
+
+The Ad Service started successfully and produced the expected output.
