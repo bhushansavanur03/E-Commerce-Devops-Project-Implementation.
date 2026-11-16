@@ -40,6 +40,20 @@ It simplifies the process of running multiple interconnected services by allowin
 - **Named Volumes:** Docker-managed storage volumes that can be reused by multiple containers.
 - **Bind Mounts:** Map a specific file or directory from the host machine into a container.
 
+
+# Start all services
+docker compose up -d
+
+# List running services
+docker compose ps
+
+# View service logs
+docker compose logs -f
+
+# Stop and remove containers
+docker compose down
+
+
 ## Summary
 
 - **Services:** Define the containers and their configurations.
